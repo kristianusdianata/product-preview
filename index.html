@@ -20,40 +20,42 @@
   </head>
   <body>
     <main>
-      <section class="card">
-        <!-- Product image -->
-        <picture class="img-container">
-          <source
-            srcset="./images/image-product-mobile.jpg"
-            media="(max-width: 600px)"
-          />
-          <img
-            src="./images/image-product-desktop.jpg"
-            alt="Responsive Image"
-          />
-        </picture>
+      <section>
+        <div class="card">
+          <!-- Product image -->
+          <picture class="img-container">
+            <source
+              srcset="./images/image-product-mobile.jpg"
+              media="(max-width: 600px)"
+            />
+            <img
+              src="./images/image-product-desktop.jpg"
+              alt="Responsive Image"
+            />
+          </picture>
 
-        <div class="main-container">
-          <!-- Product detail -->
-          <span class="product-tag montserrat-medium">PERFUME</span>
-          <h1 class="product-title fraunces-bold">
-            Gabrielle Essence Eau De Parfum
-          </h1>
-          <p class="product-desc montserrat-medium">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL
-          </p>
+          <div class="main-container">
+            <!-- Product detail -->
+            <span class="product-tag montserrat-medium">PERFUME</span>
+            <h1 class="product-title fraunces-bold">
+              Gabrielle Essence Eau De Parfum
+            </h1>
+            <p class="product-desc montserrat-medium">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL
+            </p>
 
-          <!-- Prodcut price -->
-          <div class="price-container">
-            <strong class="new-price fraunces-bold">$149.99</strong>
-            <del class="old-price montserrat-medium">$169.99</del>
+            <!-- Prodcut price -->
+            <div class="price-container">
+              <strong class="new-price fraunces-bold">$149.99</strong>
+              <del class="old-price montserrat-medium">$169.99</del>
+            </div>
+
+            <a role="button" class="montserrat-bold">
+              <img src="./images/icon-cart.svg" alt="" />
+              <span>Add to cart</span>
+            </a>
           </div>
-
-          <a role="button" class="montserrat-bold">
-            <img src="./images/icon-cart.svg" alt="" />
-            <span>Add to cart</span>
-          </a>
         </div>
       </section>
     </main>
