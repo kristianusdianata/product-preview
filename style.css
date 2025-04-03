@@ -2,6 +2,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap");
 
 :root {
+  /* Font sizes */
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+
+  /* Spacing (Padding/Margin) */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.875rem;
+  --radius-xl: 1rem;
+
   /* color */
   --green-500: hsl(158, 36%, 37%);
   --green-700: hsl(158, 42%, 18%);
@@ -51,7 +71,7 @@
 */
 html {
   line-height: 1.5;
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 * {
@@ -71,15 +91,17 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-self: center;
 }
 
 .card {
   display: flex;
   flex-direction: row;
   background-color: var(--card);
-  border-radius: 14px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   max-inline-size: 38rem;
+  margin: var(--spacing-md);
 }
 
 .card .product-img {
@@ -94,57 +116,55 @@ body {
 
 .card .product-details {
   flex: 1 1 50%;
-  padding: 1.8rem;
-  font-size: 1rem;
+  padding: var(--spacing-xl);
 }
 
 .card .product-details .product-tag {
   color: var(--card-muted);
-  font-size: 0.8em;
-  letter-spacing: 0.3rem;
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--spacing-xs);
   text-transform: uppercase;
 }
 
 .card .product-details .product-title {
-  font-size: 2.05em;
+  font-size: var(--font-size-xl);
   line-height: 1;
-  margin-block-start: 0.8rem;
-  margin-block-end: 1.5rem;
+  margin-block-start: var(--spacing-md);
+  margin-block-end: var(--spacing-lg);
 }
 
 .card .product-details .product-desc {
   color: var(--card-muted);
-  font-size: 0.92em;
+  font-size: var(--font-size-sm);
   line-height: 1.6;
 }
 
 .card .product-details .product-price {
-  margin-block-start: 1rem;
+  margin-block-start: var(--spacing-md);
   display: flex;
-  column-gap: 1.5rem;
-  font-size: 1em;
+  column-gap: var(--spacing-lg);
 }
 
 .card .product-details .product-price strong {
   color: var(--green-500);
-  font-size: 2em;
+  font-size: var(--font-size-xl);
 }
 
 .card .product-details .product-price del {
   color: var(--grey);
-  font-size: 0.9em;
+  font-size: var(--font-size-sm);
   align-self: center;
 }
 
 .card .product-details a[role="button"] {
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   display: flex;
-  margin-block-start: 1.2rem;
-  padding: 0.8rem;
+  margin-block-start: var(--spacing-lg);
+  padding: var(--spacing-md);
   background-color: var(--card-primary);
   justify-content: center;
   align-items: center;
-  column-gap: 0.8rem;
+  column-gap: var(--spacing-md);
   color: var(--card-primary-foreground);
   font-size: 0.85em;
   cursor: pointer;
@@ -168,10 +188,6 @@ body {
 
   .card {
     flex-direction: column;
-    max-inline-size: 24.5rem;
-  }
-
-  .card .product-details {
-    font-size: 1.09rem;
+    max-inline-size: 22rem;
   }
 }
