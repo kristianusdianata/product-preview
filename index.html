@@ -20,10 +20,10 @@
   </head>
   <body>
     <main>
-      <section>
-        <div class="card">
-          <!-- Product image -->
-          <picture class="img-container">
+      <div class="container">
+        <section class="card">
+          <!-- product image -->
+          <picture class="product-img">
             <source
               srcset="./images/image-product-mobile.jpg"
               media="(max-width: 600px)"
@@ -34,8 +34,8 @@
             />
           </picture>
 
-          <div class="main-container">
-            <!-- Product detail -->
+          <!-- product detail -->
+          <div class="product-details">
             <span class="product-tag montserrat-medium">PERFUME</span>
             <h1 class="product-title fraunces-bold">
               Gabrielle Essence Eau De Parfum
@@ -45,19 +45,19 @@
               Polge, Perfumer-Creator for the House of CHANEL
             </p>
 
-            <!-- Prodcut price -->
-            <div class="price-container">
-              <strong class="new-price fraunces-bold">$149.99</strong>
-              <del class="old-price montserrat-medium">$169.99</del>
+            <div class="product-price">
+              <strong class="fraunces-bold">$149.99</strong>
+              <del class="montserrat-medium">$169.99</del>
             </div>
 
+            <!-- product price -->
             <a role="button" class="montserrat-bold">
               <img src="./images/icon-cart.svg" alt="" />
               <span>Add to cart</span>
             </a>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   </body>
 </html>
