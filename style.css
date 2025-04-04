@@ -166,7 +166,7 @@ body {
   align-items: center;
   column-gap: var(--spacing-md);
   color: var(--card-primary-foreground);
-  font-size: 0.85em;
+  font-size: var(--font-size-sm);
   cursor: pointer;
 }
 
@@ -188,6 +188,6 @@ body {
 
   .card {
     flex-direction: column;
-    max-inline-size: 22rem;
+    max-inline-size: 22.2rem;
   }
 }
