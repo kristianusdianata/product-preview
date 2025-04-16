@@ -132,7 +132,7 @@ body {
   }
 }
 
-.card .container-body {
+.card .content-wrapper {
   flex: 1 1 50%;
   padding: var(--spacing-2xl);
 
