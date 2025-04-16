@@ -47,7 +47,11 @@
   --card-accent: var(--green-700);
 }
 
-/* Typograph classes */
+/* 
+  ----------------------------------------------
+  Font style
+  ----------------------------------------------
+*/
 .fraunces-bold {
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
@@ -68,6 +72,11 @@
   font-weight: 700;
   font-style: normal;
 }
+/* 
+  ----------------------------------------------
+  Font style end here
+  ----------------------------------------------
+*/
 
 /* 
   Component classes 
@@ -98,6 +107,11 @@ body {
   justify-self: center;
 }
 
+/* 
+  ----------------------------------------------
+  Card css 
+  ----------------------------------------------
+*/
 .card {
   display: flex;
   flex-direction: row;
@@ -106,77 +120,82 @@ body {
   overflow: hidden;
   max-inline-size: 42.857rem;
   margin: var(--spacing-md);
+}
 
-  & .container-img {
-    flex: 1 1 50%;
+.card .container-img {
+  flex: 1 1 50%;
 
-    & img {
-      inline-size: 100%;
-      block-size: 100%;
-      object-fit: cover;
-    }
+  & img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.card .container-body {
+  flex: 1 1 50%;
+  padding: var(--spacing-2xl);
+
+  & .product-tag {
+    color: var(--card-muted);
+    font-size: var(--font-size-sm);
+    letter-spacing: var(--spacing-xs);
+    text-transform: uppercase;
   }
 
-  & .container-body {
-    flex: 1 1 50%;
-    padding: var(--spacing-2xl);
+  & .product-title {
+    font-size: var(--font-size-3xl);
+    line-height: 1;
+    margin-block-start: var(--spacing-lg);
+    margin-block-end: var(--spacing-lg);
+  }
 
-    & .product-tag {
-      color: var(--card-muted);
-      font-size: var(--font-size-sm);
-      letter-spacing: var(--spacing-xs);
-      text-transform: uppercase;
-    }
+  & .product-desc {
+    color: var(--card-muted);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+  }
 
-    & .product-title {
-      font-size: var(--font-size-3xl);
-      line-height: 1;
-      margin-block-start: var(--spacing-lg);
-      margin-block-end: var(--spacing-lg);
-    }
+  & .product-price {
+    margin-block-start: var(--spacing-lg);
+    display: flex;
+    column-gap: var(--spacing-lg);
 
-    & .product-desc {
-      color: var(--card-muted);
-      font-size: var(--font-size-base);
-      line-height: 1.6;
-    }
-
-    & .product-price {
-      margin-block-start: var(--spacing-lg);
-      display: flex;
-      column-gap: var(--spacing-lg);
-    }
-
-    & .product-price strong {
+    & strong {
       color: var(--green-500);
       font-size: var(--font-size-3xl);
     }
 
-    & .product-price del {
+    & del {
       color: var(--grey);
       font-size: var(--font-size-sm);
       align-self: center;
     }
+  }
 
-    & a[role="button"] {
-      border-radius: var(--radius-md);
-      display: flex;
-      margin-block-start: var(--spacing-lg);
-      padding: var(--spacing-md);
-      background-color: var(--card-primary);
-      justify-content: center;
-      align-items: center;
-      column-gap: var(--spacing-md);
-      color: var(--card-primary-foreground);
-      font-size: var(--font-size-base);
-      cursor: pointer;
+  & a[role="button"] {
+    border-radius: var(--radius-md);
+    display: flex;
+    margin-block-start: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--card-primary);
+    justify-content: center;
+    align-items: center;
+    column-gap: var(--spacing-md);
+    color: var(--card-primary-foreground);
+    font-size: var(--font-size-base);
+    cursor: pointer;
 
-      & img {
-        object-fit: contain;
-      }
+    & img {
+      object-fit: contain;
     }
   }
 }
+/* 
+  ----------------------------------------------
+  Card css end here
+  ----------------------------------------------
+*/
 
 @media (hover: hover) {
   .card .product-details a[role="button"]:hover {
@@ -184,7 +203,11 @@ body {
   }
 }
 
-/* Small device responsive */
+/* 
+  ----------------------------------------------
+  Small device responsive
+  ----------------------------------------------
+*/
 @media (max-width: 600px) {
   .container {
     max-inline-size: 600px;
@@ -195,3 +218,8 @@ body {
     max-inline-size: 25rem;
   }
 }
+/* 
+  ----------------------------------------------
+  Small device responsive end here
+  ----------------------------------------------
+*/
